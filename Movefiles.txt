@@ -1,0 +1,143 @@
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ touch abc.txt def.txt ghi.txt jkl.txt
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls
+Day3/  Day5/  Day6/  Demo/  abc.txt  def.tx  def.txt  ghi.txt  hello.sh*  jkl.txt
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls *.txt
+abc.txt  def.txt  ghi.txt  jkl.txt
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ cp abc.tx abc
+cp: cannot stat 'abc.tx': No such file or directory
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ cp abc.txt abc
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls
+Day3/  Day5/  Day6/  Demo/  abc  abc.txt  def.tx  def.txt  ghi.txt  hello.sh*  jkl.txt
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ cd abd
+bash: cd: abd: No such file or directory
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ cd abc
+bash: cd: abc: Not a directory
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ rm abc
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls
+Day3/  Day5/  Day6/  Demo/  abc.txt  def.tx  def.txt  ghi.txt  hello.sh*  jkl.txt
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ mkdir abc def ghi jkl
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls
+Day3/  Day5/  Day6/  Demo/  abc/  abc.txt  def/  def.tx  def.txt  ghi/  ghi.txt  hello.sh*  jkl/  jkl.txt
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ rename abc.txt abc
+bash: rename: command not found
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ mv abc.txt abc
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls
+Day3/  Day5/  Day6/  Demo/  abc/  def/  def.tx  def.txt  ghi/  ghi.txt  hello.sh*  jkl/  jkl.txt
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ cd abc
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526/abc
+$ ls
+abc.txt
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526/abc
+$ cd .
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526/abc
+$ ls
+abc.txt
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526/abc
+$ cd ..
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls
+Day3/  Day5/  Day6/  Demo/  abc/  def/  def.tx  def.txt  ghi/  ghi.txt  hello.sh*  jkl/  jkl.txt
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ mv def.txt def
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ mv ghi.txt ghi
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ mv jkl.txt jkl
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls
+Day3/  Day5/  Day6/  Demo/  abc/  def/  def.tx  ghi/  hello.sh*  jkl/
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ rm def.tx
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls
+Day3/  Day5/  Day6/  Demo/  abc/  def/  ghi/  hello.sh*  jkl/
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ cd abc
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526/abc
+$ ls
+abc.txt
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526/abc
+$ cd ..
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls -l
+total 1
+drwxr-xr-x 1 user 197121  0 May 30 11:09 Day3/
+drwxr-xr-x 1 user 197121  0 May 30 11:09 Day5/
+drwxr-xr-x 1 user 197121  0 May 30 11:09 Day6/
+drwxr-xr-x 1 user 197121  0 May 28 09:04 Demo/
+drwxr-xr-x 1 user 197121  0 May 30 21:23 abc/
+drwxr-xr-x 1 user 197121  0 May 30 21:24 def/
+drwxr-xr-x 1 user 197121  0 May 30 21:24 ghi/
+-rwxr-xr-x 1 user 197121 36 May 28 08:26 hello.sh*
+drwxr-xr-x 1 user 197121  0 May 30 21:24 jkl/
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls -a
+./  ../  Day3/  Day5/  Day6/  Demo/  abc/  def/  ghi/  hello.sh*  jkl/
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls /
+LICENSE.txt  ReleaseNotes.html  bin/  cmd/  dev/  etc/  git-bash.exe*  git-cmd.exe*  mingw64/  proc/  tmp/  unins000.dat  unins000.exe*  unins000.msg  usr/
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$ ls -l
+total 1
+drwxr-xr-x 1 user 197121  0 May 30 11:09 Day3/
+drwxr-xr-x 1 user 197121  0 May 30 11:09 Day5/
+drwxr-xr-x 1 user 197121  0 May 30 11:09 Day6/
+drwxr-xr-x 1 user 197121  0 May 28 09:04 Demo/
+drwxr-xr-x 1 user 197121  0 May 30 21:23 abc/
+drwxr-xr-x 1 user 197121  0 May 30 21:24 def/
+drwxr-xr-x 1 user 197121  0 May 30 21:24 ghi/
+-rwxr-xr-x 1 user 197121 36 May 28 08:26 hello.sh*
+drwxr-xr-x 1 user 197121  0 May 30 21:24 jkl/
+
+user@Hanuma MINGW64 ~/OneDrive/Desktop/CIC-526
+$
